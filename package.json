@@ -1,0 +1,30 @@
+{
+  "name": "periodic-table",
+  "version": "0.0.1",
+  "description": "periodic elements data",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "csvtojson data.csv >> data.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrejewski/periodic-table.git"
+  },
+  "keywords": [
+    "periodic",
+    "table",
+    "elements",
+    "data"
+  ],
+  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrejewski/periodic-table/issues"
+  },
+  "homepage": "https://github.com/andrejewski/periodic-table",
+  "devDependencies": {
+    "csvtojson": "^0.3.19",
+    "mocha": "^2.2.1"
+  }
+}
