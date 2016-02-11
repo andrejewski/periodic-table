@@ -20,6 +20,13 @@ var he = pt.elements.Helium;
 
 // single elements by symbol
 var he = pt.symbols.He;
+
+// calculate atomic mass of molecule
+// note: must take the form of [Single Element][Number] [Single Element][Number] ...
+// parenthesis around elements not supported (pull requests welcome!)
+var am = pt.calculate.atomicMass("H2 O");
+// or
+var am = pt.calculate.atomicMass("C12 H22 O11");
 ```
 
 ## Sample data
