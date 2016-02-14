@@ -21,12 +21,13 @@ var he = pt.elements.Helium;
 // single elements by symbol
 var he = pt.symbols.He;
 
-// calculate atomic mass of molecule
-// note: must take the form of [Single Element][Number] [Single Element][Number] ...
-// parenthesis around elements not supported (pull requests welcome!)
-var am = pt.calculate.atomicMass("H2 O");
-// or
-var am = pt.calculate.atomicMass("C12 H22 O11");
+var util = require('periodic-table/util');
+
+// atomic mass of molecule
+// atomicMass("[Element][Number] [Element][Number] ...")
+// parenthesis around elements not supported..yet
+var waterMass = util.atomicMass("H2 O");
+var organicMass = util.atomicMass("C12 H22 O11");
 ```
 
 ## Sample data

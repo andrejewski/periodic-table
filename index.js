@@ -1,3 +1,4 @@
+
 var path = require('path');
 var data = require('./data');
 
@@ -18,4 +19,3 @@ module.exports.symbols = data.reduce(function(obj, element) {
 	return obj;
 }, {});
 
-module.exports.calculate = require("./calculate");

@@ -1,6 +1,7 @@
 
 var assert = require('assert');
 var data = require('../data');
+var util = require('../util');
 var pt = require('../');
 
 describe('periodic-table', function() {
@@ -33,6 +34,18 @@ describe('periodic-table', function() {
 			});
 		});
 	});
+
+});
+
+describe('periodic-table/util', function() {
+  
+  describe('#atomicMass(formula String) Number', function() {
+    it('should return the correct atomic mass sum', function() {
+      var mass = (1.00794 * 2) + 15.9994;
+      var test = util.atomicMass('H2 O');
+      assert.equal(test, mass);
+    });
+  });
 
 });
 
