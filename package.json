@@ -1,11 +1,11 @@
 {
   "name": "periodic-table",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "periodic elements data",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build": "csvtojson data.csv >> data.json"
+    "build": "csvtojson data.csv > data.json"
   },
   "repository": {
     "type": "git",
