@@ -19,3 +19,7 @@ module.exports.symbols = data.reduce(function(obj, element) {
 	return obj;
 }, {});
 
+module.exports.num = data.reduce(function(obj, num) {
+	obj[element.atomicNumber] = element;
+	return obj;
+}, {});
