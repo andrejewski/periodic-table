@@ -21,6 +21,12 @@ var he = pt.elements.Helium;
 // single elements by symbol
 var he = pt.symbols.He;
 
+// elements sorted by atomic number
+var byNumber = pt.all().sort(function(a, b) {
+  return a.atomicNumber - b.atomicNumber;
+});
+var he = byNumber[2 - 1];
+
 var util = require('periodic-table/util');
 
 // atomic mass of molecule
