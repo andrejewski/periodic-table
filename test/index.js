@@ -35,6 +35,17 @@ describe('periodic-table', function() {
 		});
 	});
 
+  describe('.numbers[atomicNumber]', function() {
+    it('should contain the whole set of atomic numbers', function() {
+      var numbers = data.map(function(elem) {
+        return elem.atomicNumber;
+      });
+      numbers.forEach(function(number) {
+        assert.ok(pt.numbers[number]);
+      });
+    });
+  });
+
 });
 
 describe('periodic-table/util', function() {
