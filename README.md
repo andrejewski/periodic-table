@@ -53,7 +53,7 @@ var organicMass = util.atomicMass("C12 H22 O11");
   bondingType: 'diatomic',
   meltingPoint: 14,
   boilingPoint: 20,
-  density: 0.0000899,
+  density: 0.0899,
   groupBlock: 'nonmetal',
   yearDiscovered: 1766 
 }
