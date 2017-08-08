@@ -11,7 +11,7 @@
   "scripts": {
     "test": "mocha",
     "build": "csvtojson data.csv > data.json",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/andrejewski/periodic-table",
   "devDependencies": {
-    "csvtojson": "^0.3.19",
-    "mocha": "^2.2.1"
+    "csvtojson": "1.1.7",
+    "mocha": "3.5.0"
   }
 }
