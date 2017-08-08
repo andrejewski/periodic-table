@@ -3,6 +3,11 @@
   "version": "0.0.8",
   "description": "periodic elements data",
   "main": "index.js",
+  "files": [
+    "data.csv",
+    "data.json",
+    "util.js"
+  ],
   "scripts": {
     "test": "mocha",
     "build": "csvtojson data.csv > data.json",
