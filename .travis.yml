@@ -1,0 +1,10 @@
+language: node_js
+node_js: node
+deploy:
+  provider: npm
+  email: christopher.andrejewski@gmail.com
+  api_key:
+    secure: n2099rfEcXDJOM6gI4b3YOrPFx7qEFoBzusCh/UrugDvanHmB9+SuGB0WL5NIk6BBQyF26G4doXYJn/4he6V2sTbzZc18dQeMP5H4ePNqoI4KvOkuW5UxJFWtbWQx02WQWoT/FniuomLJmiICUKdBWvID8ZfY2+NGSz7ZOwB6yBg8/kzZJz6pgUBXApiX+dTGz7u8XCBtff00cWhTEReWcTHeoU6brnR6ZifP25wJ7pqEfZ7fQHY5gF14Z0kFc8mNEbmQ/GeZl5r4LWBw/ro49YsoQPGpkeG4iOyf/ZYY2zVPZJmH43DweOKKEHj5hNSUkBbQjxbu4NoSRz7rcixMrvMOqak84XumlDR9uyBD3uSq1KjEsV+vrbLdkx6CBRWtGLkF5SFflgjqCCBu3bzzO7xM8Tn2qa2vJC57I9bF1NmyyRNMjO5KCrNo94f96sPM5dK+dK1zG1aI5F2AcAQC8mdgtkV6puYGw8bILLNTx4cyOPphMbphUjeUqdFTEk0liWka5BJDvq8yjcp9G4yYpN1n4WTyVki1uJYSroKSvm2WZdcOrvEvnd/L/Ke4eZHfmyewYkiCYh3khdOhbvB+6U/e4wE3FvlQl2P3Scxm62en10cd3CU0qPnL1pOgssuNClsIefEOyeEfcX0wNmheSHHU7flRANwTE7+qKIgbfc=
+  on:
+    tags: true
+    repo: andrejewski/periodic-table
