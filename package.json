@@ -1,36 +1,38 @@
 {
   "name": "periodic-table",
-  "version": "0.0.8",
   "description": "periodic elements data",
-  "main": "index.js",
+  "version": "0.0.8",
+  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/andrejewski/periodic-table/issues"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "csvtojson": "^1.1.7",
+    "fixpack": "^2.3.1",
+    "standard": "^10.0.3"
+  },
   "files": [
     "data.csv",
     "data.json",
     "util.js"
   ],
-  "scripts": {
-    "test": "mocha",
-    "build": "csvtojson data.csv > data.json",
-    "prepublishOnly": "npm run build"
-  },
+  "homepage": "https://github.com/andrejewski/periodic-table",
+  "keywords": [
+    "data",
+    "elements",
+    "periodic",
+    "table"
+  ],
+  "license": "ISC",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/andrejewski/periodic-table.git"
   },
-  "keywords": [
-    "periodic",
-    "table",
-    "elements",
-    "data"
-  ],
-  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andrejewski/periodic-table/issues"
-  },
-  "homepage": "https://github.com/andrejewski/periodic-table",
-  "devDependencies": {
-    "csvtojson": "1.1.7",
-    "mocha": "3.5.0"
+  "scripts": {
+    "build": "csvtojson data.csv > data.json",
+    "prepublishOnly": "npm run build",
+    "test": "fixpack && standard --fix && ava"
   }
 }
