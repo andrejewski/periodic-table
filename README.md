@@ -7,6 +7,14 @@ This package is a wrapper for a dataset of periodic elements. These elements wer
 npm install periodic-table
 ```
 
+---
+
+## 🚨 Seeking maintainer(s)
+I lack the depth and time to verify pull requests.
+Please reach out to [+periodic-maintainers](mailto:christopher.andrejewski+periodic-maintainers@gmail.com) if interested in becoming a contributor and maintaining the dataset.
+
+---
+
 ## Usage
 
 ```js
